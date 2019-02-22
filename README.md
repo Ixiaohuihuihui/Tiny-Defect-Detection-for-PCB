@@ -11,6 +11,14 @@ And another student has published his paper "A PCB Dataset for Defects Detection
 6 types of defects are made by photoshop, a graphics editor published by Adobe Systems. The defects defined in the dataset are: missing hole, mouse bite, open circuit, short, spur, spurious copper. 
 For example:
 ![1](a(missinghole).png)
+## Download Model
+Please download [resnet50_v1](http://download.tensorflow.org/models/resnet_v1_50_2016_08_28.tar.gz)、[resnet101_v1](http://download.tensorflow.org/models/resnet_v1_101_2016_08_28.tar.gz) pre-trained models on Imagenet, put it to $PATH_ROOT/data/pretrained_weights. 
+## My Development Environment
+1、python2.7 (anaconda recommend)             
+2、CUDA Version 8.0.44 , CUDNN=5.1.10           
+3、[opencv(cv2)](https://pypi.org/project/opencv-python/)    
+4、[tfplot](https://github.com/wookayin/tensorflow-plot)             
+5、tensorflow == 1.121     
 ## Some results 
 ![1](01_missing_hole_01.jpg)
 ![2](04_mouse_bite_10.jpg)
