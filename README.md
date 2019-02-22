@@ -18,7 +18,25 @@ Please download [resnet50_v1](http://download.tensorflow.org/models/resnet_v1_50
 2、CUDA Version 8.0.44 , CUDNN=5.1.10           
 3、[opencv(cv2)](https://pypi.org/project/opencv-python/)    
 4、[tfplot](https://github.com/wookayin/tensorflow-plot)             
-5、tensorflow == 1.121     
+5、tensorflow == 1.121 
+## Demo(available)
+
+**Select a configuration file in the folder ($PATH_ROOT/libs/configs/) and copy its contents into cfgs.py, then download the corresponding [weights]().**      
+
+```   
+cd $PATH_ROOT/tools
+python inference.py --data_dir='/PATH/TO/IMAGES/' 
+                    --save_dir='/PATH/TO/SAVE/RESULTS/' 
+                    --GPU='0'
+```
+
+## Eval
+```  
+cd $PATH_ROOT/tools
+python eval.py --eval_imgs='/PATH/TO/IMAGES/'  
+               --annotation_dir='/PATH/TO/TEST/ANNOTATION/'
+               --GPU='0'
+```   
 ## Some results 
 ![1](01_missing_hole_01.jpg)
 ![2](04_mouse_bite_10.jpg)
