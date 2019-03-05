@@ -38,5 +38,6 @@ python eval.py --eval_imgs='/PATH/TO/IMAGES/'
                --GPU='0'
 ```   
 ## Some results 
+[the more results](https://github.com/Ixiaohuihuihui/PCB-defect-detection/tree/master/tools/inference_results)
 ![1](01_missing_hole_01.jpg)
 ![2](04_mouse_bite_10.jpg)
