@@ -22,7 +22,7 @@ Please download [resnet50_v1](http://download.tensorflow.org/models/resnet_v1_50
 5、tensorflow == 1.121 
 ## Demo(available)
 
-**Select a configuration file in the folder ($PATH_ROOT/libs/configs/) and copy its contents into cfgs.py, then download the corresponding [weights](ttps://pan.baidu.com/s/1rvHjihG1fL499SqU28Nang).**code：shac 
+**Select a configuration file in the folder ($PATH_ROOT/libs/configs/) and copy its contents into cfgs.py, then download the corresponding [weights](https://pan.baidu.com/s/1rvHjihG1fL499SqU28Nang).**code：shac 
 
 ```   
 cd $PATH_ROOT/tools
