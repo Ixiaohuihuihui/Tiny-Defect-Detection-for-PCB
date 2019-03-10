@@ -8,8 +8,9 @@ You can download at http://robotics.pkusz.edu.cn/resources/dataset/.
 
 And another student has published his paper "A PCB Dataset for Defects Detection and Classification" on arxiv. More datails about this dataset: https://arxiv.org/pdf/1901.08204.pdf. 
 
-6 types of defects are made by photoshop, a graphics editor published by Adobe Systems. The defects defined in the dataset are: missing hole, mouse bite, open circuit, short, spur, spurious copper. 
+6 types of defects are made by photoshop, a graphics editor published by Adobe Systems. The defects defined in the dataset are: missing hole, mouse bite, open circuit, short, spur, and spurious copper. 
 For example:
+
 ![1](a(missinghole).png)
 ## Download Model
 Please download [resnet50_v1](http://download.tensorflow.org/models/resnet_v1_50_2016_08_28.tar.gz)、[resnet101_v1](http://download.tensorflow.org/models/resnet_v1_101_2016_08_28.tar.gz) pre-trained models on Imagenet, put it to $PATH_ROOT/data/pretrained_weights. 
