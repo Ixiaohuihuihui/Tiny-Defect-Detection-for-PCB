@@ -32,6 +32,13 @@ Please download [resnet50_v1](http://download.tensorflow.org/models/resnet_v1_50
 3、[opencv(cv2)](https://pypi.org/project/opencv-python/)    
 4、[tfplot](https://github.com/wookayin/tensorflow-plot)             
 5、tensorflow == 1.121 
+
+## Compile
+```  
+cd $PATH_ROOT/libs/box_utils/cython_utils
+python setup.py build_ext --inplace
+```
+
 ## Demo(available)
 
 **Select a configuration file in the folder ($PATH_ROOT/libs/configs/) and copy its contents into cfgs.py, then download the corresponding [weights](https://pan.baidu.com/s/1rvHjihG1fL499SqU28Nang).code：shac 
@@ -47,7 +54,27 @@ After running this code, you will get the detected image in your 'save_dir' path
 ## Train
 Please follow this project:
 https://github.com/DetectionTeamUCAS/FPN_Tensorflow
-```
+
+1、If you want to train your own data, please note:  
+```     
+(1) Modify parameters (such as CLASS_NUM, DATASET_NAME, VERSION, etc.) in $PATH_ROOT/libs/configs/cfgs.py
+(2) Add category information in $PATH_ROOT/libs/label_name_dict/lable_dict.py     
+(3) Add data_name to line 76 of $PATH_ROOT/data/io/read_tfrecord.py 
+```     
+
+2、make tfrecord
+```  
+cd $PATH_ROOT/data/io/  
+python convert_data_to_tfrecord.py --VOC_dir='/PATH/TO/VOCdevkit/VOCdevkit_train/' 
+                                   --xml_dir='Annotation'
+                                   --image_dir='JPEGImages'
+                                   --save_name='train' 
+                                   --img_format='.jpg' 
+                                   --dataset='pascal'
+```     
+
+3、train
+```  
 cd $PATH_ROOT/tools
 python train.py
 ```
