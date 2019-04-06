@@ -16,7 +16,7 @@ tf.app.flags.DEFINE_string('image_dir', 'JPEGImages', 'image dir')
 tf.app.flags.DEFINE_string('save_name', 'test', 'save name')
 tf.app.flags.DEFINE_string('save_dir', '../tfrecord/', 'save name')
 tf.app.flags.DEFINE_string('img_format', '.jpg', 'format of image')
-tf.app.flags.DEFINE_string('dataset', 'pascal', 'dataset')
+tf.app.flags.DEFINE_string('dataset', 'pcb', 'dataset')
 FLAGS = tf.app.flags.FLAGS
 
 
