@@ -235,8 +235,6 @@ def do_python_eval(test_imgid_list, test_annotation_path):
                                      cls_name=cls,
                                      annopath=test_annotation_path)
     AP_list += [AP]
-    print(len(recall0),len(recall1),len(recall2),len(recall3),len(recall4),len(recall5))
-    print("cls : {}|| Recall: {} || Precison: {}|| AP: {}".format(cls, recall[-1], precision[-1], AP))
     pl.plot(recall, precision, lw=2, label='{} (AP = {:.4f})'''.format(cls, AP))
     print(10*"__")
   pl.xlabel('Recall')
@@ -247,7 +245,7 @@ def do_python_eval(test_imgid_list, test_annotation_path):
   pl.title('Precision-Recall')
   pl.legend(loc="lower left")     
   pl.show()
-  pl.savefig(cfgs.VERSION+'test_1.jpg')
+  pl.savefig(cfgs.VERSION+'_eval.jpg')
   print("hello")
   print("mAP is : {}".format(np.mean(AP_list)))
 
