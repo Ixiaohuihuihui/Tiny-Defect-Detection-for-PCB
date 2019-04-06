@@ -57,6 +57,7 @@ If you want to train your own data, please follow this project: https://github.c
 1、Modify parameters (such as CLASS_NUM, DATASET_NAME, VERSION, etc.) in $PATH_ROOT/libs/configs/cfgs.py     
 
 2、Make tfrecord 
+
 (1)Modify parameters (such as VOC_dir, xml_dir, image_dir, dataset, etc.) in $PATH_ROOT/data/io/convert_data_to_tfrecord.py   
 ```  
 cd $PATH_ROOT/data/io/  
