@@ -52,25 +52,15 @@ python inference.py --data_dir='/PATH/TO/THE/TO/BE/DETECTED/IMAGES/'
 After running this code, you will get the detected image in your 'save_dir' path.
 
 ## Train
-Please follow this project:
-https://github.com/DetectionTeamUCAS/FPN_Tensorflow
+If you want to train your own data, please follow this project: https://github.com/DetectionTeamUCAS/FPN_Tensorflow
 
-1、If you want to train your own data, please note:  
-```     
-(1) Modify parameters (such as CLASS_NUM, DATASET_NAME, VERSION, etc.) in $PATH_ROOT/libs/configs/cfgs.py
-(2) Add category information in $PATH_ROOT/libs/label_name_dict/lable_dict.py     
-(3) Add data_name to line 76 of $PATH_ROOT/data/io/read_tfrecord.py 
-```     
+1、Modify parameters (such as CLASS_NUM, DATASET_NAME, VERSION, etc.) in $PATH_ROOT/libs/configs/cfgs.py     
 
-2、make tfrecord
+2、Make tfrecord 
+(1)Modify parameters (such as VOC_dir, xml_dir, image_dir, dataset, etc.) in $PATH_ROOT/data/io/convert_data_to_tfrecord.py   
 ```  
 cd $PATH_ROOT/data/io/  
-python convert_data_to_tfrecord.py --VOC_dir='/PATH/TO/VOCdevkit/VOCdevkit_train/' 
-                                   --xml_dir='Annotation'
-                                   --image_dir='JPEGImages'
-                                   --save_name='train' 
-                                   --img_format='.jpg' 
-                                   --dataset='pascal'
+python convert_data_to_tfrecord.py 
 ```     
 
 3、train
