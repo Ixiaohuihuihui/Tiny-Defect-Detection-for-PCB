@@ -45,6 +45,8 @@ python inference.py --data_dir='/PATH/TO/THE/TO/BE/DETECTED/IMAGES/'
 After running this code, you will get the detected image in your 'save_dir' path.
 
 ## Train
+Please follow this project:
+https://github.com/DetectionTeamUCAS/FPN_Tensorflow
 ```
 cd $PATH_ROOT/tools
 python train.py
