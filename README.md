@@ -41,7 +41,9 @@ python setup.py build_ext --inplace
 
 ## Demo(available)
 
-**Select a configuration file in the folder ($PATH_ROOT/libs/configs/) and copy its contents into cfgs.py, then download the corresponding [weights](https://pan.baidu.com/s/1rvHjihG1fL499SqU28Nang).code：shac 
+Select a configuration file in the folder ($PATH_ROOT/libs/configs/) and copy its contents into cfgs.py.
+
+Then download the corresponding [weights](https://pan.baidu.com/s/1rvHjihG1fL499SqU28Nang). code：shac 
 
 ```   
 cd $PATH_ROOT/tools
