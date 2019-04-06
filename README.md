@@ -12,11 +12,14 @@ More datails about this dataset: https://arxiv.org/pdf/1901.08204.pdf.
 For example:
 
 ![1](a(missinghole).png)
-### Update
+### Dataset Update
 The paper of this project will be update.
 However, the defect images of raw dataset are high-resolution. 
 With the respect of such small dataset, data augmentation techniques are adopted before data training. The images are then cropped
 into 600 × 600 sub-images, forming our training set and testingset with 9920 and 2508 images, respectively.
+You can download augmented dataset which contains 10668 images: https://pan.baidu.com/s/1eAxDF4txpgMInxbmNDX0Zw code: a6rh.
+
+Note: This augmented dataset is privately owned, if you want to use it in your paper, please contact me.
 
 ## Download Model
 Please download [resnet50_v1](http://download.tensorflow.org/models/resnet_v1_50_2016_08_28.tar.gz)、[resnet101_v1](http://download.tensorflow.org/models/resnet_v1_101_2016_08_28.tar.gz) pre-trained models on Imagenet, put it to $PATH_ROOT/data/pretrained_weights. 
