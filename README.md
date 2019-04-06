@@ -17,6 +17,7 @@ The paper of this project will be update.
 However, the defect images of raw dataset are high-resolution. 
 With the respect of such small dataset, data augmentation techniques are adopted before data training. The images are then cropped
 into 600 × 600 sub-images, forming our training set and testingset with 9920 and 2508 images, respectively.
+
 You can download augmented dataset which contains 10668 images: https://pan.baidu.com/s/1eAxDF4txpgMInxbmNDX0Zw code: a6rh.
 
 Note: This augmented dataset is privately owned, if you want to use it in your paper, please contact me.
@@ -42,7 +43,10 @@ python inference.py --data_dir='/PATH/TO/THE/TO/BE/DETECTED/IMAGES/'
 After running this code, you will get the detected image in your 'save_dir' path.
 
 ## Train
-
+```
+cd $PATH_ROOT/tools
+python train.py
+```
 
 ## Eval
 ```  
