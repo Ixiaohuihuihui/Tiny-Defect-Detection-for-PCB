@@ -6,12 +6,18 @@ The Open Lab on Human Robot Interaction of Peking University has released the PC
 
 You can download at http://robotics.pkusz.edu.cn/resources/dataset/. 
 
-And another student has published his paper "A PCB Dataset for Defects Detection and Classification" on arxiv. More datails about this dataset: https://arxiv.org/pdf/1901.08204.pdf. 
+More datails about this dataset: https://arxiv.org/pdf/1901.08204.pdf. 
 
 6 types of defects are made by photoshop, a graphics editor published by Adobe Systems. The defects defined in the dataset are: missing hole, mouse bite, open circuit, short, spur, and spurious copper. 
 For example:
 
 ![1](a(missinghole).png)
+### Update
+The paper of this project will be update.
+However, the defect images of raw dataset are high-resolution. 
+With the respect of such small dataset, data augmentation techniques are adopted before data training. The images are then cropped
+into 600 × 600 sub-images, forming our training set and testingset with 9920 and 2508 images, respectively.
+
 ## Download Model
 Please download [resnet50_v1](http://download.tensorflow.org/models/resnet_v1_50_2016_08_28.tar.gz)、[resnet101_v1](http://download.tensorflow.org/models/resnet_v1_101_2016_08_28.tar.gz) pre-trained models on Imagenet, put it to $PATH_ROOT/data/pretrained_weights. 
 ## My Development Environment
@@ -22,23 +28,32 @@ Please download [resnet50_v1](http://download.tensorflow.org/models/resnet_v1_50
 5、tensorflow == 1.121 
 ## Demo(available)
 
-**Select a configuration file in the folder ($PATH_ROOT/libs/configs/) and copy its contents into cfgs.py, then download the corresponding [weights](https://pan.baidu.com/s/1rvHjihG1fL499SqU28Nang).**code：shac 
+**Select a configuration file in the folder ($PATH_ROOT/libs/configs/) and copy its contents into cfgs.py, then download the corresponding [weights](https://pan.baidu.com/s/1rvHjihG1fL499SqU28Nang).code：shac 
 
 ```   
 cd $PATH_ROOT/tools
-python inference.py --data_dir='/PATH/TO/IMAGES/' 
+python inference.py --data_dir='/PATH/TO/THE/TO/BE/DETECTED/IMAGES/' 
                     --save_dir='/PATH/TO/SAVE/RESULTS/' 
                     --GPU='0'
 ```
+After running this code, you will get the detected image in your 'save_dir' path.
+
+## Train
+
 
 ## Eval
 ```  
 cd $PATH_ROOT/tools
-python eval.py --eval_imgs='/PATH/TO/IMAGES/'  
+python eval.py --eval_imgs='/PATH/TO/THE/TO/BE/EVALED/IMAGES/'  
                --annotation_dir='/PATH/TO/TEST/ANNOTATION/'
                --GPU='0'
 ```   
+After running this code, you will get the precision, recall and AP of per defect type.
+
 ## Some results 
 [the more results](https://github.com/Ixiaohuihuihui/PCB-defect-detection/tree/master/tools/inference_results)
 ![1](01_missing_hole_01.jpg)
 ![2](04_mouse_bite_10.jpg)
+
+## The Precision and Recall curve (PR)
+![3](TDD_results.jpg)
