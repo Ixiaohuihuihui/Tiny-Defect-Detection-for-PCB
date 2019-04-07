@@ -16,7 +16,7 @@ For example:
 The paper of this project will be update.
 However, the defect images of raw dataset are high-resolution. 
 With the respect of such small dataset, data augmentation techniques are adopted before data training. The images are then cropped
-into 600 × 600 sub-images, forming our training set and testingset with 9920 and 2508 images, respectively.
+into 600 × 600 sub-images, forming our training set and testing set with 9920 and 2508 images, respectively.
 
 You can download augmented dataset: https://pan.baidu.com/s/1eAxDF4txpgMInxbmNDX0Zw code: a6rh
 
