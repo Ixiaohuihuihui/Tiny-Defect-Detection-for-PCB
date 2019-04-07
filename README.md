@@ -56,7 +56,17 @@ After running this code, you will get the detected image in your 'save_dir' path
 ## Train
 If you want to train your own data, please follow this project: https://github.com/DetectionTeamUCAS/FPN_Tensorflow
 
-1、Modify parameters (such as CLASS_NUM, DATASET_NAME, VERSION, etc.) in $PATH_ROOT/libs/configs/cfgs.py     
+1、Modify parameters (such as CLASS_NUM, DATASET_NAME, VERSION, etc.) in $PATH_ROOT/libs/configs/cfgs.py    
+
+2、Generate train and test floder
+(1) 
+
+```  
+cd $PATH_ROOT/data/io/  
+python divide_data.py 
+
+```    
+You should check the image_path and xml_path in the 'divide_data.py'
 
 2、Make tfrecord 
 
