@@ -66,7 +66,7 @@ cd $PATH_ROOT/data/io/
 python convert_data_to_tfrecord.py 
 ```     
 
-3、train
+3、Train
 ```  
 cd $PATH_ROOT/tools
 python train.py
