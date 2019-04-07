@@ -45,6 +45,12 @@ Select a configuration file in the folder ($PATH_ROOT/libs/configs/) and copy it
 
 Then download the corresponding [weights](https://pan.baidu.com/s/1rvHjihG1fL499SqU28Nang). code：shac 
 
+And then put the weights into 
+```
+TRAINED_CKPT = os.path.join(ROOT_PATH, 'output/trained_weights')
+```
+It depends on your project path. Please read '$PATH_ROOT/libs/configs/cfgs.py'.
+
 ```   
 cd $PATH_ROOT/tools
 python inference.py --data_dir='/PATH/TO/THE/TO/BE/DETECTED/IMAGES/' 
