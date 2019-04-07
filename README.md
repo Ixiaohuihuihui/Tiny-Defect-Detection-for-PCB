@@ -60,8 +60,6 @@ If you want to train your own data, please follow this project: https://github.c
 
 2、Generate train and test floder
 
-(1) 
-
 ```  
 cd $PATH_ROOT/data/io/  
 python divide_data.py 
