@@ -45,7 +45,7 @@ Select a configuration file in the folder ($PATH_ROOT/libs/configs/) and copy it
 
 Then download the corresponding [weights](https://pan.baidu.com/s/1rvHjihG1fL499SqU28Nang). code：shac 
 
-And then put the weights into 
+And then put the trained weights into 
 ```
 TRAINED_CKPT = os.path.join(ROOT_PATH, 'output/trained_weights')
 ```
