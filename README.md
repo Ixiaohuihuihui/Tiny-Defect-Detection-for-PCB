@@ -2,7 +2,7 @@
 ## Note 
 This project code is forked from https://github.com/DetectionTeamUCAS/FPN_Tensorflow. I have only made minor changes on this wonderful and clear project. Thanks for their perfect code. I can learn and apply it to a new problem.
 ##  PCB defect dataset
-The Open Lab on Human Robot Interaction of Peking University has released the PCB defect dataset. If you need to do experiments on this dataset, please contact the author (you can find his email on the website). 
+The Open Lab on Human Robot Interaction of Peking University has released the PCB defect dataset. If you need to do experiments on this dataset, please contact the dataset author. 
 
 You can download at http://robotics.pkusz.edu.cn/resources/dataset/. 
 
