@@ -21,11 +21,13 @@ You can download augmented dataset: https://pan.baidu.com/s/1eAxDF4txpgMInxbmNDX
 
 The augmented dataset contains 10668 images and the corresponding annotation files.
 
-Note: 
+### Some instructions: 
 
-This augmented dataset is privately owned, if you want to use it in your paper, please contact me.
+1、This augmented dataset is privately owned, if you want to use it in your paper, please contact me.
 
-If you have questions, please open an issue, I will reply as soon as possible.
+2、If you have questions, please open an issue, I will reply as soon as possible. If you don't have some difficult problem about this project, maybe you **don't need** to send me an email and add wechat, just open an issue.
+
+3、Of course, if you have other research questions like dataset and defect detection, welcome to send me an email.
 
 ## Download Model
 Please download [resnet50_v1](http://download.tensorflow.org/models/resnet_v1_50_2016_08_28.tar.gz)、[resnet101_v1](http://download.tensorflow.org/models/resnet_v1_101_2016_08_28.tar.gz) pre-trained models on Imagenet, put it to $PATH_ROOT/data/pretrained_weights. 
