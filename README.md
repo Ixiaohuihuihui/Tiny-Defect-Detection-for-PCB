@@ -4,7 +4,7 @@ This project code is forked from https://github.com/DetectionTeamUCAS/FPN_Tensor
 ##  PCB defect dataset
 The Open Lab on Human Robot Interaction of Peking University has released the PCB defect dataset. If you need to do experiments on this dataset, please contact the dataset author. 
 
-You can download at http://robotics.pkusz.edu.cn/resources/dataset/. 
+You can download at http://robotics.pkusz.edu.cn/resources/dataset/. or https://www.dropbox.com/s/32kolsaa45z2mpj/PCB_DATASET.zip?dl=0
 
 
 6 types of defects are made by photoshop, a graphics editor published by Adobe Systems. The defects defined in the dataset are: missing hole, mouse bite, open circuit, short, spur, and spurious copper. 
@@ -17,7 +17,9 @@ However, the defect images of raw dataset are high-resolution.
 With the respect of such small dataset, data augmentation techniques are adopted before data training. The images are then cropped
 into 600 × 600 sub-images, forming our training set and testing set with 9920 and 2508 images, respectively.
 
-You can download augmented dataset: https://pan.baidu.com/s/1eAxDF4txpgMInxbmNDX0Zw code: a6rh
+You can download augmented dataset:
+(1) For Baiduyun: https://pan.baidu.com/s/1eAxDF4txpgMInxbmNDX0Zw code: a6rh
+(2) For Dropbox: https://www.dropbox.com/s/h0f39nyotddibsb/VOC_PCB.zip?dl=0
 
 The augmented dataset contains 10668 images and the corresponding annotation files.
 
@@ -28,6 +30,9 @@ The augmented dataset contains 10668 images and the corresponding annotation fil
 2、If you have questions, please open an issue, I will reply as soon as possible. If you don't have some difficult problem about this project, maybe you **don't need** to send me an email and add wechat, just open an issue.
 
 3、Of course, if you have other research questions like dataset and defect detection, welcome to send me an email.
+
+4、Cite: 
+Ding, Runwei, et al. "TDD-Net: A Tiny Defect Detection Network for Printed Circuit Boards." CAAI Transactions on Intelligence Technology (2019).
 
 ## Download Model
 Please download [resnet50_v1](http://download.tensorflow.org/models/resnet_v1_50_2016_08_28.tar.gz)、[resnet101_v1](http://download.tensorflow.org/models/resnet_v1_101_2016_08_28.tar.gz) pre-trained models on Imagenet, put it to $PATH_ROOT/data/pretrained_weights. 
@@ -48,7 +53,12 @@ python setup.py build_ext --inplace
 
 Select a configuration file in the folder ($PATH_ROOT/libs/configs/) and copy its contents into cfgs.py.
 
-Then download the corresponding [weights](https://pan.baidu.com/s/1rvHjihG1fL499SqU28Nang). code：shac 
+Then download the corresponding weights:
+
+For Baiduyun: [weights](https://pan.baidu.com/s/1rvHjihG1fL499SqU28Nang). code：shac 
+
+For Google driver: [weights](https://drive.google.com/drive/folders/1oEHrEslnM5DBKB-610j-gO-x9-e90VwR?usp=sharing)
+
 
 And then put the trained weights into 
 ```
