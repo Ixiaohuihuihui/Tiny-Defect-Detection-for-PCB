@@ -53,8 +53,6 @@ python setup.py build_ext --inplace
 
 ## Demo(available)
 
-Select a configuration file in the folder ($PATH_ROOT/libs/configs/) and copy its contents into cfgs.py.
-
 Then download the corresponding weights:
 
 For Baiduyun: [weights](https://pan.baidu.com/s/1rvHjihG1fL499SqU28Nang). code：shac 
@@ -79,7 +77,7 @@ After running this code, you will get the detected image in your 'save_dir' path
 ## Train
 If you want to train your own data, please follow this project: https://github.com/DetectionTeamUCAS/FPN_Tensorflow
 
-1、Modify parameters (such as CLASS_NUM, DATASET_NAME, VERSION, etc.) in $PATH_ROOT/libs/configs/cfgs.py    
+1、Select a configuration file in the folder ($PATH_ROOT/libs/configs/) and copy its contents into cfgs.py. Modify parameters (such as CLASS_NUM, DATASET_NAME, VERSION, etc.) in $PATH_ROOT/libs/configs/cfgs.py    
 
 2、Generate train and test floder
 
