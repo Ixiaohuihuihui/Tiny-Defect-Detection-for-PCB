@@ -73,6 +73,8 @@ python inference.py --data_dir='/PATH/TO/THE/TO/BE/DETECTED/IMAGES/'
                     --GPU='0'
 ```
 After running this code, you will get the detected image in your 'save_dir' path.
+Why didn't you get the correct output image when run the inference.py?
+**Note!!! If you didn't load the correct checkpoint but the pretrain model, you need to change the checkpoint file (FPN_Res101_0117_OHEM/checkpoint), because this file contains the wrong path, and you need to change it with your file path!!!**
 
 ## Train
 If you want to train your own data, please follow this project: https://github.com/DetectionTeamUCAS/FPN_Tensorflow
