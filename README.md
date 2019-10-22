@@ -36,6 +36,8 @@ The augmented dataset contains 10668 images and the corresponding annotation fil
 4、Cite: 
 Ding, Runwei, et al. "TDD-Net: A Tiny Defect Detection Network for Printed Circuit Boards." CAAI Transactions on Intelligence Technology (2019).
 
+5、**It's not fair to use this code without quoting this paper.**
+
 ## Download Model
 Please download [resnet50_v1](http://download.tensorflow.org/models/resnet_v1_50_2016_08_28.tar.gz)、[resnet101_v1](http://download.tensorflow.org/models/resnet_v1_101_2016_08_28.tar.gz) pre-trained models on Imagenet, put it to $PATH_ROOT/data/pretrained_weights. 
 ## My Development Environment
