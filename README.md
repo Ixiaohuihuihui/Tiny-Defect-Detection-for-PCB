@@ -17,14 +17,6 @@ However, the defect images of raw dataset are high-resolution.
 With the respect of such small dataset, data augmentation techniques are adopted before data training. The images are then cropped
 into 600 × 600 sub-images, forming our training set and testing set with 9920 and 2508 images, respectively.
 
-You can download augmented dataset:
-
-(1) For Baiduyun: https://pan.baidu.com/s/1eAxDF4txpgMInxbmNDX0Zw code: a6rh
-
-(2) For Dropbox: https://www.dropbox.com/s/h0f39nyotddibsb/VOC_PCB.zip?dl=0
-
-The augmented dataset contains 10668 images and the corresponding annotation files.
-
 ### Some instructions: 
 
 1、This augmented dataset is privately owned, if you want to use it in your paper, please contact me.
@@ -33,8 +25,8 @@ The augmented dataset contains 10668 images and the corresponding annotation fil
 
 3、Of course, if you have other research questions like dataset and defect detection, welcome to send me an email.
 
-4、Cite: 
-Ding, Runwei, et al. "TDD-Net: A Tiny Defect Detection Network for Printed Circuit Boards." CAAI Transactions on Intelligence Technology (2019).
+4、You can access this paper and cite: 
+Ding, Runwei, et al. "TDD-Net: A Tiny Defect Detection Network for Printed Circuit Boards." CAAI Transactions on Intelligence Technology (https://ieeexplore.ieee.org/document/8757220)(2019).
 
 ## Download Model
 Please download [resnet50_v1](http://download.tensorflow.org/models/resnet_v1_50_2016_08_28.tar.gz)、[resnet101_v1](http://download.tensorflow.org/models/resnet_v1_101_2016_08_28.tar.gz) pre-trained models on Imagenet, put it to $PATH_ROOT/data/pretrained_weights. 
