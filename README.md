@@ -25,8 +25,10 @@ into 600 × 600 sub-images, forming our training set and testing set with 9920 a
 
 3、Of course, if you have other research questions like dataset and defect detection, welcome to send me an email.
 
-4、You can access this paper and cite: 
+4、If you use our code, please access this paper and cite: 
 Ding, Runwei, et al. "TDD-Net: A Tiny Defect Detection Network for Printed Circuit Boards." CAAI Transactions on Intelligence Technology (https://ieeexplore.ieee.org/document/8757220)(2019).
+
+5、Chinese Blog: https://blog.csdn.net/dlh_sycamore/article/details/87886198
 
 ## Download Model
 Please download [resnet50_v1](http://download.tensorflow.org/models/resnet_v1_50_2016_08_28.tar.gz)、[resnet101_v1](http://download.tensorflow.org/models/resnet_v1_101_2016_08_28.tar.gz) pre-trained models on Imagenet, put it to $PATH_ROOT/data/pretrained_weights. 
