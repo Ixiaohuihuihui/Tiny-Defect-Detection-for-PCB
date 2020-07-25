@@ -1,7 +1,7 @@
 # PCB-defect-detection
 ## Note 
 This project code is forked from https://github.com/DetectionTeamUCAS/FPN_Tensorflow. I have only made minor changes on this wonderful and clear project. Thanks for their perfect code. I can learn and apply it to a new problem. The Chinese blog is: https://blog.csdn.net/dlh_sycamore/article/details/87886198
-##  PCB defect dataset
+##  PCB Defect Dataset
 The Open Lab on Human Robot Interaction of Peking University has released the PCB defect dataset. If you need to do experiments on this dataset, please contact the dataset author. 
 
 You can download at http://robotics.pkusz.edu.cn/resources/dataset/. or https://www.dropbox.com/s/32kolsaa45z2mpj/PCB_DATASET.zip?dl=0
@@ -11,13 +11,12 @@ You can download at http://robotics.pkusz.edu.cn/resources/dataset/. or https://
 For example:
 
 ![1](a(missinghole).png)
-### Dataset Update
-The paper of this project will be update.
+### Augmented Dataset
 However, the defect images of raw dataset are high-resolution. 
 With the respect of such small dataset, data augmentation techniques are adopted before data training. The images are then cropped
-into 600 × 600 sub-images, forming our training set and testing set with 9920 and 2508 images, respectively.
+into 600 × 600 sub-images, forming our training set and testing set with 9920 and 2508 images, respectively. This augmented dataset is privately owned, if you want to use it in your paper, please contact me in email. And please introduce some brief personal information, for example, you can tell me that are you in school or have started to work? 
 
-### Some instructions: 
+### Some Instructions: 
 
 1、This augmented dataset is privately owned, if you want to use it in your paper, please contact me.
 
