@@ -14,20 +14,27 @@ For example:
 ### Augmented Dataset
 However, the defect images of raw dataset are high-resolution. 
 With the respect of such small dataset, data augmentation techniques are adopted before data training. The images are then cropped
-into 600 × 600 sub-images, forming our training set and testing set with 9920 and 2508 images, respectively. This augmented dataset is privately owned, if you want to use it in your paper, please contact me in email. And please introduce some brief personal information, for example, you can tell me that are you in school or have started to work? 
+into 600 × 600 sub-images, forming our training set and testing set with 9920 and 2508 images, respectively. 
+You can download augmented dataset: 
+  
+(1) For Baiduyun: https://pan.baidu.com/s/1eAxDF4txpgMInxbmNDX0Zw code: a6rh 
+(2) For Dropbox: https://www.dropbox.com/s/h0f39nyotddibsb/VOC_PCB.zip?dl=0 
+  
+The augmented dataset contains 10668 images and the corresponding annotation files. 
+If you use our dataset in your paper, please cite our paper. 
+  
+R. Ding, L. Dai, G. Li and H. Liu, "TDD-net: a tiny defect detection network for printed circuit boards," in CAAI Transactions on Intelligence Technology, vol. 4, no. 2, pp. 110-116, 6 2019, doi: 10.1049/trit.2019.0019. 
 
 ### Some Instructions: 
 
-1、This augmented dataset is privately owned, if you want to use it in your paper, please contact me.
+1、If you have questions, please open an issue, I will reply as soon as possible. If you don't have some difficult problem about this project, maybe you **don't need** to send me an email and add wechat, just open an issue.
 
-2、If you have questions, please open an issue, I will reply as soon as possible. If you don't have some difficult problem about this project, maybe you **don't need** to send me an email and add wechat, just open an issue.
+2、Of course, if you have other research questions like dataset and defect detection, welcome to send me an email.
 
-3、Of course, if you have other research questions like dataset and defect detection, welcome to send me an email.
-
-4、If you use our code, please access this paper and cite: 
+3、If you use our code, please access this paper and cite: 
 Ding, Runwei, et al. "TDD-Net: A Tiny Defect Detection Network for Printed Circuit Boards." CAAI Transactions on Intelligence Technology (https://ieeexplore.ieee.org/document/8757220)(2019).
 
-5、Chinese Blog: https://blog.csdn.net/dlh_sycamore/article/details/87886198
+4、Chinese Blog: https://blog.csdn.net/dlh_sycamore/article/details/87886198
 
 ## Download Model
 Please download [resnet50_v1](http://download.tensorflow.org/models/resnet_v1_50_2016_08_28.tar.gz)、[resnet101_v1](http://download.tensorflow.org/models/resnet_v1_101_2016_08_28.tar.gz) pre-trained models on Imagenet, put it to $PATH_ROOT/data/pretrained_weights. 
