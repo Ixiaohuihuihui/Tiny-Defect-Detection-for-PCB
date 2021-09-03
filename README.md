@@ -40,16 +40,26 @@ Ding, Runwei, et al. "TDD-Net: A Tiny Defect Detection Network for Printed Circu
 ## Download Model
 Please download [resnet50_v1](http://download.tensorflow.org/models/resnet_v1_50_2016_08_28.tar.gz)、[resnet101_v1](http://download.tensorflow.org/models/resnet_v1_101_2016_08_28.tar.gz) pre-trained models on Imagenet, put it to $PATH_ROOT/data/pretrained_weights. 
 ## My Development Environment
-1、python2.7 (anaconda recommend)             
+1、python3.6 (anaconda/pipenv recommend)             
 2、CUDA Version 8.0.44 , CUDNN=5.1.10           
 3、[opencv(cv2)](https://pypi.org/project/opencv-python/)    
 4、[tfplot](https://github.com/wookayin/tensorflow-plot)             
 5、tensorflow == 1.121 
 
 ## Compile
-```  
-cd $PATH_ROOT/libs/box_utils/cython_utils
+```bash
+git clone https://github.com/Ixiaohuihuihui/Tiny-Defect-Detection-for-PCB.git
+cd Tiny-Defect-Detection-for-PCB
+
+# pipenv --python 3.6
+
+pip install -r requirements.txt
+# pipenv run pip install -r requirements.txt
+
+cd ${PWD}/libs/box_utils/cython_utils
 python setup.py build_ext --inplace
+# pipenv run python setup.py build_ext --inplace
+
 ```
 
 ## Demo(available)
@@ -65,12 +75,15 @@ And then put the trained weights into
 ```
 TRAINED_CKPT = os.path.join(ROOT_PATH, 'output/trained_weights')
 ```
-It depends on your project path. Please read '$PATH_ROOT/libs/configs/cfgs.py'.
+It depends on your project path. Please read '$PWD/libs/configs/cfgs.py'.
 
 ```   
-cd $PATH_ROOT/tools
-python inference.py --data_dir='/PATH/TO/THE/TO/BE/DETECTED/IMAGES/' 
-                    --save_dir='/PATH/TO/SAVE/RESULTS/' 
+mkdir -p ./input ./output
+
+cd $PWD/tools
+
+python inference.py --data_dir='../input' 
+                    --save_dir='../output' 
                     --GPU='0'
 ```
 After running this code, you will get the detected image in your 'save_dir' path.
