@@ -1,0 +1,4 @@
+opencv-python
+tensorflow==1.12.2
+tensorflow-plot
+cython
