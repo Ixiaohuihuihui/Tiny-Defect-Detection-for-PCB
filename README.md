@@ -4,7 +4,7 @@ This project code is forked from https://github.com/DetectionTeamUCAS/FPN_Tensor
 ##  PCB Defect Dataset
 The Open Lab on Human Robot Interaction of Peking University has released the PCB defect dataset. If you need to do experiments on this dataset, please contact the dataset author. 
 
-You can download at http://robotics.pkusz.edu.cn/resources/dataset/. or https://www.dropbox.com/s/32kolsaa45z2mpj/PCB_DATASET.zip?dl=0
+You can download at https://pan.baidu.com/s/1eAxDF4txpgMInxbmNDX0Zw code: a6rh
 
 
 6 types of defects are made by photoshop, a graphics editor published by Adobe Systems. The defects defined in the dataset are: missing hole, mouse bite, open circuit, short, spur, and spurious copper. 
